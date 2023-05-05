@@ -238,14 +238,18 @@ head {
 
 .contact {
     color: black;
-    font-size: 35px;
+    font-size: 25px;
     font-family: sans-serif;
 }
 
 p2 {
-    box-sizing: content-box;
-    width: 300px;
-    height: 100px;
-    padding: 10px;
-    border: 2px solid rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.contactsec {
+    margin: 10px;
+    padding: 20px;
+    border-width: 4px;
+    border-color: black;
+    border-style: groove;
 }
