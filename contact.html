@@ -28,14 +28,64 @@
 
     <br>
     <br>
-    <br>
 
-    <h1 class="contact">Phone number</h1>
+    <section class="contactsec">
+        <h1 class="contact">Phone Number</h1>
+        <p2>123-456-7890</p2>
+        <br>
+        <br>
+        <br>
+        <h1 class="contact">Email</h1>
+        <p2>iamcool@yes.com</p2>
+    </section>
 
-    <p2>123-456-7890</p2>
-    <br>
-    <p class="contact2"></p>
+    <form class="myForm" id="myForm">
 
+        <h3>User Details Form</h3>
+
+        <br>
+
+        <label for="first-name">First Name</label>
+        <input type="text" name="fisrt-name" id="first-name" placeholder="type your name" required>
+
+        <br>
+        <br>
+
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="type your email" required>
+
+        <br>
+        <br>
+
+        <label for="birthdate">Birthdate</label>
+        <input type="date" name="birthdate" id="birthdate" required>
+
+        <br>
+        <br>
+
+        <input type="submit" value="Submit This Form">
+
+        <br>
+        <br>
+
+    </form>
+
+    <script>
+        document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
+
+        function handleFormSubmit(event) {
+            event.preventDefault()
+
+
+            var name = document.getElementById("first-name").value
+            var email = document.getElementById("email").value
+            var birthdate = document.getElementById("birthdate").value
+
+            console.log(name)
+            console.log(email)
+            console.log(birthdate)
+        }
+    </script>
 </body>
 
 </html>
