@@ -58,38 +58,6 @@
 
     </div>
 
-
-    <form class="myForm" id="myForm">
-
-        <h3>User Details Form</h3>
-
-        <br>
-
-        <label for="first-name">First Name</label>
-        <input type="text" name="fisrt-name" id="first-name" placeholder="type your name" required>
-
-        <br>
-        <br>
-
-        <label for="email">Email</label>
-        <input type="email" name="email" id="email" placeholder="type your email" required>
-
-        <br>
-        <br>
-
-        <label for="birthdate">Birthdate</label>
-        <input type="date" name="birthdate" id="birthdate" required>
-
-        <br>
-        <br>
-
-        <input type="submit" value="Submit This Form">
-
-        <br>
-        <br>
-
-    </form>
-
     <section class="stories-section">
         <br>
         <h1 class="stories">My stories</h1>
@@ -151,22 +119,8 @@
         // document.getElementById("intro").innerHTML = "Worst Title"
         // }
 
-        document.getElementById("myForm").addEventListener("submit", handleFormSubmit)
 
-        function handleFormSubmit(event) {
-            event.preventDefault()
-
-
-            var name = document.getElementById("first-name").value
-            var email = document.getElementById("email").value
-            var birthdate = document.getElementById("birthdate").value
-
-            console.log(name)
-            console.log(email)
-            console.log(birthdate)
-
-            // document.getElementById("intro").innerHTML = name; <---changes title to your first name
-        }
+        // document.getElementById("intro").innerHTML = name; <---changes title to your first name
 
 
 
